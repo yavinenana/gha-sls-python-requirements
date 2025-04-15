@@ -22,3 +22,7 @@ jobs:
         with:
           python-version: 3.9
       - uses: ./
+      - uses: ./
+        with: 
+          region: 'us-east-2'
+          stage: 'qa'

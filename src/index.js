@@ -1,15 +1,12 @@
 // import os from 'os';
 
 console.log('gha sls python requirements')
-// const { nodeVersion } = require('node:process');
-// console.log(`node Version: ${nodeVersion}`)
-
-// const { version } = require('node:process');
-// console.log(`Version: ${version}`);
 
 const os = require('os');
-// const sys = require('sys');
+const region = process.env.INPUT_REGION;
+const stage = process.env.INPUT_STAGE;
 
+console.log(`region: ${region} || stage: ${stage}`)
 
 console.log(`Node.js Version: ${process.version}`);
 console.log(`OS Platform: ${os.platform()}`);
