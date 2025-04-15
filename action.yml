@@ -1,5 +1,5 @@
 name: Serverless with Python Requirements and deploy options
-description: JavaScript action that runs a Serverless deploy using the serverless-python-requirements plugin and using deploy options like to region and stage
+description: JavaScript action that deploy Serverless  using the serverless-python-requirements plugin using options region and stage
 
 runs:
   using: node20
