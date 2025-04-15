@@ -18,7 +18,7 @@ console.log(`CPU Architecture: ${os.arch()}`);
 
 const { exec } = require('child_process');
 
-exec('python3 --version', (error, stdout, stderr) => {
+exec('python --version', (error, stdout, stderr) => {
     if (error) {
         console.error(`Error: ${error.message}`);
         return;
