@@ -4,6 +4,7 @@ description: JavaScript action that deploy Serverless  using the serverless-pyth
 runs:
   using: node20
   main: src/index.js
+  # main: index.js
 
 branding:
   icon: arrow-right
