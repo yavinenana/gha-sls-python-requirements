@@ -8,7 +8,7 @@ const inputs = {
   AWS_SECRET_ACCESS_KEY: core.getInput('aws-secret-access-key'),
   FRAMEWORK: core.getInput('framework'),
   SERVERLESS_ACCESS_KEY: core.getInput('serverless-access-key'),
-  WORKING_DIRECTORY: core.getInput('working-directory')
+  WORKING_DIRECTORY: core.getInput('working-directory'),
   STAGE: core.getInput('stage'),
   AWS_REGION: core.getInput('aws-region'),
 }
