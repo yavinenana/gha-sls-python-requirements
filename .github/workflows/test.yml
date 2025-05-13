@@ -56,6 +56,7 @@ jobs:
         with:
           stage: qa
           aws-region: 'us-east-2'
+          framework: 2
           # serverless-access-key: ${{ secrets.SERVERLESS_ACCESS_KEY }}
           working-directory: ${{ matrix.examples }}
           
