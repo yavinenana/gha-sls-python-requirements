@@ -50,10 +50,12 @@ jobs:
           framework: 3.26.0
           working-directory: ${{ matrix.examples }}
 
-      # - name: Serverless Deploy (Serverless Access Key)
-      #   if: ${{ matrix.examples == './examples/serverless_access_key' }}
-      #   uses: ./
-      #   with:
-      #     serverless-access-key: ${{ secrets.SERVERLESS_ACCESS_KEY }}
-      #     working-directory: ${{ matrix.examples }}
-      #     
+      - name: Serverless Deploy (Serverless Access Key - changed by framework v2 without serverless credentials)
+        if: ${{ matrix.examples == './examples/serverless_access_key' }}
+        uses: ./
+        with:
+          stage: qa
+          aws-region: 'us-east-2'
+          # serverless-access-key: ${{ secrets.SERVERLESS_ACCESS_KEY }}
+          working-directory: ${{ matrix.examples }}
+          
