@@ -62,8 +62,8 @@ async function runServerlessDeploy() {
     // Run Serverless deploy
     console.log(`stage || region: ${inputs.STAGE} || ${inputs.AWS_REGION}`)
     console.log("Running Serverless deploy")
-    await exeq(`serverless deploy --verbose || echo "::error:: Serverless deploy failed"`)
-    // await exeq(`serverless deploy --stage ${inputs.STAGE} --region ${inputs.AWS_REGION} --verbose || echo "::error:: Serverless deploy failed"`)
+    // await exeq(`serverless deploy --verbose || echo "::error:: Serverless deploy failed"`)
+    await exeq(`serverless deploy --stage ${inputs.STAGE} --region ${inputs.AWS_REGION} --verbose || echo "::error:: Serverless deploy failed"`)
 
   } catch (error) {
     console.error("Serverless Deploy Error:", error)

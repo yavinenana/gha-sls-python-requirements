@@ -24,6 +24,7 @@ inputs:
   framework:
     description: The Serverless framework version to install.
     required: false
+    default: 3
 
   serverless-access-key:
     description: Serverless access key. Required if not using AWS credentials. Serverless V4 requires a serverless access key.
